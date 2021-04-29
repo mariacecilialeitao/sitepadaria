@@ -38,7 +38,7 @@ const loadSearch = (form, productsDivId) => {
     form.addEventlistener('submit' , (e) => {
         e.preventDefault()
         if (inputSearch.value != '') {
-        producstDiv.querySelectorAll('.Cardápio').forEach(prato =>{
+        producstDiv.querySelectorAll('.prato').forEach(prato =>{
                 prato.remove()
             })
 
@@ -50,12 +50,12 @@ const loadSearch = (form, productsDivId) => {
                             <h4>${produto.title}</h4>
                             <h4>R$ ${produto.value}</h4>
                             <p>${produto.description}</p>
-                            <button type="button" onclick="modalTrigger()" >Quero este prato</button>
+                            <button type="button" onclick="modalTrigger(${produto.id})" >Quero este prato</button>
         
                     </article>
                 `
         
-                parentDiv.insertAdjacentHTML('beforeend',html)
+                producstDiv.insertAdjacentHTML('beforeend',html)
             })
 
 
