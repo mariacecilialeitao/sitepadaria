@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padaria Ideal </title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <a href="index.html" class="logo">
+                    <h1>Padaria Ideal</h1>
+                </a>
+                <div class="Menu">
+                    <ul>
+                        <li>
+                            <a href="sobre.html">Sobre</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+        <section class="hero">
+            <div class="container">
+                <form id="formSearch">
+                    <input type="search" placeholder="O que deseja comer hoje?" name="inputSearch" id="inputSearch">
+
+                </form>
+            </div>
+
+        </section>
+    </header>
+    <main>
+        <div class="container">
+            <h3>Cardápio</h3>
+            <section class="Cardápio" id = "product-div">
+                <article class="prato">
+                    <img src="imagens/prato 01.jpg" alt="Prato 01">
+                    <h4>Prato 01</h4>
+                    <h4>R$ 3.00</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum debitis odit repellat recusandae iusto cupiditate aliquam labore minus dolore quaerat, excepturi eligendi soluta expedita deleniti eius, facilis nihil tempora suscipit.</p>
+                    <button type="button" onclick="modalTrigger()">Quero este prato</button>
+
+                </article>
+                <article class="prato">
+                    <img src="imagens/prato 02.jpg" alt="Prato 02">
+                    <h4>Prato 02</h4>
+                    <h4>R$ 4.00</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum debitis odit repellat recusandae iusto cupiditate aliquam labore minus dolore quaerat, excepturi eligendi soluta expedita deleniti eius, facilis nihil tempora suscipit.</p>
+                    <button type="button" onclick="modalTrigger()">Quero esta bebida</button>
+
+                </article>
+                <article class="prato">
+                    <img src="imagens/prato 03.jpg" alt="Prato 03">
+                    <h4>Prato 03</h4>
+                    <h4>R$ 35.00</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum debitis odit repellat recusandae iusto cupiditate aliquam labore minus dolore quaerat, excepturi eligendi soluta expedita deleniti eius, facilis nihil tempora suscipit.</p>
+                    <button type="button" onclick="modalTrigger()">Quero este prato</button>
+
+                </article>
+                <article class="prato">
+                    <img src="imagens/prato 04.jpg" alt="Prato 04">
+                    <h4>Prato 04</h4>
+                    <h4>R$ 1.00</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum debitis odit repellat recusandae iusto cupiditate aliquam labore minus dolore quaerat, excepturi eligendi soluta expedita deleniti eius, facilis nihil tempora suscipit.</p>
+                    <button type="button" onclick="modalTrigger()">Quero este prato</button>
+
+                </article>
+                <article class="prato">
+                    <img src="imagens/prato 05.jpg" alt="Prato 05">
+                    <h4>Prato 01</h4>
+                    <h4>R$ 5.50</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum debitis odit repellat recusandae iusto cupiditate aliquam labore minus dolore quaerat, excepturi eligendi soluta expedita deleniti eius, facilis nihil tempora suscipit.</p>
+                    <button type="button" onclick="modalTrigger()">Quero este prato</button>
+
+                </article>
+                <article class="prato">
+                    <img src="imagens/prato 06.jpg" alt="Prato 06">
+                    <h4>Prato 06</h4>
+                    <h4>R$ 2.50</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum debitis odit repellat recusandae iusto cupiditate aliquam labore minus dolore quaerat, excepturi eligendi soluta expedita deleniti eius, facilis nihil tempora suscipit.</p>
+                    <button type="button" onclick="modalTrigger()">Quero este prato</button>
+
+                </article>
+                <article class="prato">
+                    <img src="imagens/prato 07.jpg" alt="Prato 07">
+                    <h4>Prato 07</h4>
+                    <h4>R$ 6.00</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum debitis odit repellat recusandae iusto cupiditate aliquam labore minus dolore quaerat, excepturi eligendi soluta expedita deleniti eius, facilis nihil tempora suscipit.</p>
+                    <button type="button" onclick="modalTrigger()">Quero este prato</button>
+
+                </article>
+                <article class="prato">
+                    <img src="imagens/prato 08.jpg" alt="Prato 08">
+                    <h4>Prato 08</h4>
+                    <h4>R$ 2.00</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum debitis odit repellat recusandae iusto cupiditate aliquam labore minus dolore quaerat, excepturi eligendi soluta expedita deleniti eius, facilis nihil tempora suscipit.</p>
+                    <button type="button" onclick="modalTrigger()">Quero esta bebida</button>
+
+            </section>
+        </div>
+
+        <div class="modal hide">
+            <form  class="modal-form" id="form-product">
+                <div class="form-group">
+                    <label for="title">Prato</label> 
+                    <input type="text" name="title" id="title" class="form-control" placeholder="Ex: Prato 01" required="required">
+                </div>
+                <div class="form-group">
+                    <label for="quantity">Quantidade</label> 
+                    <input type="number" name="quantity" id="quantity"  class="form-control" placeholder="Ex: 1" required="required" min="1">
+                </div>
+                <div class="form-group">
+                    <label for="name">Seu nome</label> 
+                    <input type="text" name="name" id="name"  class="form-control" placeholder="Ex: Cecília" required="required">
+                </div>
+                <div class="form-group">
+                    <label for="address">Seu Endereço</label> 
+                    <input type="text" name="address" id="address"  class="form-control" placeholder="Ex: Rua x" required="required">
+                </div>
+                <div class="form-group">
+                    <label for="payment">Pagamento</label> 
+                    <select name="payment" id="payment" class="form-control" required="required">
+                        <option value="dinheiro">Dinheiro</option>
+                        <option value="cartao">Cartão de Crédito</option>
+
+                    </select>
+                </div>
+
+                <div class="btn-group">
+                    <button type="submit" class="btn btn-success">Finalizar Pedido</button>
+                    <button type="button" class="btn btn-danger" onclick="modalTrigger()">Cancelar</button>
+
+
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>Desenvolvido por Maria Cecília Cardoso Leitão</p>
+        </div>
+    </footer>
+
+    <script src="javascript/produtos.js"></script>
+    <script src="javascript/app.js"></script>
+
+
+</body>
+</html>
